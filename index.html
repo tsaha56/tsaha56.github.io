@@ -2,73 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tonmoy Saha</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home :: Tonmoy Saha</title>
+  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="shortcut icon" type="image/png" href="/img/favicon.png"/>
 </head>
 
 <body>
   <div class="container">
-    <header class="topbar">
-      <div class="prompt">$ cd /home/tonmoy</div>
-      <nav class="nav">
-        <a href="#papers">Papers</a>
-        <a href="#group">Group</a>
-        <a href="#misc">Misc</a>
-      </nav>
+
+    <header class="header">
+      <div class="header__inner">
+        <a href="/" class="logo">
+          <span class="logo__mark">&gt;</span>
+          <span class="logo__text">$ cd /home/tonmoy</span>
+          <span class="logo__cursor"></span>
+        </a>
+
+        <nav class="menu">
+          <a href="/papers/">Papers</a>
+          <a href="/group/">Group</a>
+          <a href="/misc/">Misc</a>
+        </nav>
+      </div>
     </header>
 
-    <section class="hero">
-      <div class="photo">
-        <img src="assets/profile.jpg" alt="Profile photo" />
-      </div>
+    <main class="post">
+      <figure class="hero">
+        <img src="/img/profile.jpg" alt="Tonmoy Saha" class="hero__img" />
+        <figcaption class="hero__cap">
+          <h1>Tonmoy Saha</h1>
 
-      <div class="intro">
-        <h1>Tonmoy Saha</h1>
-        <p class="role">MS Researcher, Mechanical Engineering @ Clarkson University</p>
+          <p class="hero__icons">
+            <a href="mailto:YOUR_EMAIL" title="Email">✉️</a>
+            <a href="https://scholar.google.com/" target="_blank" rel="noopener" title="Google Scholar">🎓</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener" title="LinkedIn">in</a>
+            <a href="https://github.com/tsaha56" target="_blank" rel="noopener" title="GitHub">🐙</a>
+          </p>
 
-        <div class="icons">
-          <a href="mailto:your@email.com" aria-label="Email">✉️</a>
-          <a href="https://scholar.google.com/" target="_blank" rel="noreferrer">🎓</a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">in</a>
-          <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">🐙</a>
+          <p><strong>MS Researcher, Mechanical Engineering @ Clarkson University</strong></p>
+          <p><strong>PAR Lab • Ultrasonic NDE • Physics-Informed ML • Continuous Manufacturing (OSD)</strong></p>
+
+          <p class="note">
+            ★ If you are interested in working with me, please follow the instructions
+            <a href="/group/#openings">here</a> ★
+          </p>
+        </figcaption>
+      </figure>
+
+      <section class="post-content">
+        <p>
+          I am an MS researcher at Clarkson University working in the Photo-Acoustics Research (PAR) Lab.
+          My work focuses on ultrasonic non-destructive evaluation (NDE) of oral solid dosage (OSD) tablets
+          and machine-learning models for real-time condition monitoring and RTRT in continuous manufacturing.
+        </p>
+
+        <h2>News</h2>
+        <div class="scrollbox">
+          <p><strong>2026</strong></p>
+          <p>01. — Building physics-informed ML pipelines for waveform inversion and parameter prediction.</p>
+          <p>— Integrating automated acquisition and analysis workflows for lab-scale and CM-ready testing.</p>
+
+          <p><strong>2025</strong></p>
+          <p>— Coursework and research deliverables: DSP + PAR Lab experimental rigs and ML benchmarking.</p>
         </div>
 
-        <p class="tags">
-          Ultrasonic NDE | Physics-Informed ML | Continuous Manufacturing | OSD Tablets
-        </p>
+        <h2>Selected Interests</h2>
+        <ul>
+          <li>Ultrasonic wave propagation and signal processing</li>
+          <li>Physics-informed ML for inverse problems</li>
+          <li>RTRT and autonomous monitoring in continuous manufacturing</li>
+          <li>Composite/additive manufacturing (sustainability-focused)</li>
+        </ul>
 
-        <p class="note">
-          ★ If you are interested in working with me, please follow the instructions <a href="#misc">here</a> ★
-        </p>
-      </div>
-    </section>
+        <div class="pagination">
+          <a class="btn" href="/misc/">← Misc</a>
+          <a class="btn" href="/papers/">Papers →</a>
+        </div>
+      </section>
 
-    <section class="content">
-      <p>
-        I am a researcher at Clarkson University working in the Photo-Acoustics Research (PAR) Lab,
-        focusing on ultrasonic non-destructive evaluation (NDE) and physics-informed machine learning
-        for real-time condition monitoring in continuous manufacturing.
-      </p>
+      <footer class="footer">
+        <div>© <span id="y"></span> Tonmoy Saha • tsaha56.github.io</div>
+      </footer>
 
-      <h2 id="news">News</h2>
-      <ul class="list">
-        <li><span class="date">2026-01</span> — Started WaveML/DispersionML experiments on OSD tablets.</li>
-        <li><span class="date">2025-12</span> — Built automated data pipeline for waveform processing.</li>
-      </ul>
-
-      <h2 id="papers">Papers</h2>
-      <ul class="list">
-        <li>Paper Title 1 <a href="#">[pdf]</a> <a href="#">[code]</a></li>
-        <li>Paper Title 2 <a href="#">[pdf]</a></li>
-      </ul>
-
-      <h2 id="misc">Misc</h2>
-      <ul class="list">
-        <li><a href="#">CV</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </section>
+    </main>
   </div>
+
+  <script src="/assets/main.js"></script>
 </body>
 </html>
