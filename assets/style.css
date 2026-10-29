@@ -233,6 +233,32 @@ a, em, p, strong, li, figcaption, .figure-row figcaption
   font-size: clamp(1rem, 2vw, 1.4rem);
 }
 
+/* Click-to-enlarge images (see lightbox.js) */
+.zoomable {
+  cursor: zoom-in;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.85);
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 92vw;
+  max-height: 92vh;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+}
+
 /* Header logo and footer use the same size as the menu links */
 .header .logo__text,
 .footer .logo__text,
