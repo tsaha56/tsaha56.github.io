@@ -233,6 +233,13 @@ a, em, p, strong, li, figcaption, .figure-row figcaption
   font-size: clamp(1rem, 2vw, 1.4rem);
 }
 
+/* Header logo and footer use the same size as the menu links */
+.header .logo__text,
+.footer .logo__text,
+.footer .copyright {
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+}
+
 .footer .logo__text, .footer .logo__cursor::after {
   color: var(--color-secondary);
 }
